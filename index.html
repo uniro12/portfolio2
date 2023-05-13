@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Bootstrap/css/style.css">
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -21,7 +22,7 @@
                 </span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto text-center">
                     <li class="nav-item"><a class="nav-link px-lg-3" href="#index"><i
                                 class="fa-solid fa-house"></i>Home</a></li>
                     <li class="nav-item"><a class="nav-link px-lg-3" href="#about"><i
@@ -39,13 +40,9 @@
 
     <div id="content-wrapper">
         <!-- Home Section -->
-        <section id="index" class="section bg-dark px-lg-5">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <img src="images/Coach2.jpg" alt="" class="d-block">
-                    </div>
-                </div>
+        <section id="index" class="section bg-dark">
+            <div class="container-fluid" style="padding: 0">
+                <img src="images/wow.jpg" alt="" class="d-block">
             </div>
         </section>
         <!-- End Home Section -->
@@ -55,17 +52,19 @@
         <section id="about" class="section bg-dark px-lg-5">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-down" data-aos-delay="300">
                     <img src="images/us.png" alt="" style="width: 100%;">
                     <h3>Charles Villena</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione enim cupiditate tempora nobis dignissimos, quod nam nemo maiores, cum voluptas ducimus, molestiae laborum accusamus quos error! Natus possimus vitae optio!</p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-down" data-aos-delay="500">
                     <img src="images/us.png" alt="" style="width: 100%;">
                     <h3>Ronan Urot</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita id labore similique itaque porro ratione sit qui nihil, voluptates quibusdam? Fugit est aliquam quisquam illum earum numquam totam perspiciatis assumenda.</p>
+                    <p>
+                        I am a student currently pursuing my Bachelor of Science in Information Technology (BSIT) degree. I have always been fascinated by the world of technology, and my passion for computers and programming led me to pursue this course.
+                    </p>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4" data-aos="fade-down" data-aos-delay="700">
                     <img src="images/us.png" alt="" style="width: 100%;">
                     <h3>Keith Raganas</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident tempore omnis ex sit. Harum aliquid facilis dolore accusamus molestiae possimus perferendis, itaque voluptas, cumque asperiores fuga, numquam consequuntur quasi facere.</p>
@@ -81,7 +80,7 @@
             <div class="container-fluid mt-5 mb-5">
                 <h5>Activities</h5>
                 <div class="row gy-4">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-down" data-aos-delay="200">
                         <div class="card mx-auto shadow-effect">
                             <img class="card-img-top" src="images/periodic.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -92,7 +91,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" data-aos="fade-down" data-aos-delay="400">
                         <div class="card mx-auto shadow-effect">
                             <img class="card-img-top" src="images/survey.jpg" alt="Card image cap">
                             <div class="card-body">
@@ -110,7 +109,7 @@
 
         <!-- Gallery -->
         <section id="gallery" class="section bg-dark">
-            <div class="container mt-3 mb-3">
+            <div class="container mt-3 mb-3" data-aos="fade-right" data-aos-delay="200">
                 <div class="row">
                     <div class="col-lg-12">
                         <!-- Slideshow -->
@@ -182,7 +181,7 @@
 
         <!-- Contact Us -->
         <section id="contact" class="section bg-dark ">
-            <div class="container mt-3 mb-3">
+            <div class="container mt-3 mb-3"  data-aos="zoom-in" data-aos-delay="150">
                 <div class="row mx-1 justify-content-center">
                     <div class="col-lg-6 bg-color roundedd">
                         <form action="" class="row gy-3 mx-auto">
@@ -216,6 +215,11 @@
         <!-- End Contact Us -->
     </div>
     <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Bootstrap/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
