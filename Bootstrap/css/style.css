@@ -3,7 +3,7 @@
     font-weight: 700;
 }
 .navbar {
-    background-color: rgb(77, 77, 77);
+    background-color: rgba(77, 77, 77, 0.459);
 }
 .navbar .nav-link {
     font-size: 17px;
@@ -51,4 +51,13 @@
 }
 .shadow-effect:hover {
     box-shadow: 0 0 0 5px rgb(175, 174, 174);
+}
+.bg-color {
+    background-color: rgb(78, 160, 70);
+}
+.roundedd {
+    border-radius: 2%;
+}
+.d-block {
+    width: 100%;
 }
